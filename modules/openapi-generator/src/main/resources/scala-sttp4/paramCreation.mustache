@@ -1,1 +1,0 @@
-"{{baseName}}", {{#isContainer}}{{#required}}{{{paramName}}}.mkString(","){{/required}}{{^required}}{{{paramName}}}.filter(_.nonEmpty).map(_.mkString(",")){{/required}}{{/isContainer}}{{^isContainer}}{{#required}}{{{paramName}}}.toString{{/required}}{{^required}}{{{paramName}}}{{/required}}{{/isContainer}}
